@@ -1,0 +1,11 @@
+@startuml
+start
+:Betrachte die gesamte Liste als unsortierten Bereich;
+while () is (Es gibt noch unsortierte Elemente)
+  :Finde das kleinste Element im unsortierten Bereich;
+  :Verschiebe das kleinste Element an die richtige Stelle im sortierten Bereich;
+endwhile
+-> keine unsortierten Elemente vorhanden;
+:Die Liste ist vollständig sortiert;
+stop
+@enduml

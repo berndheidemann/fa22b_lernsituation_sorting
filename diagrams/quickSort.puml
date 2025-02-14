@@ -1,0 +1,15 @@
+@startuml
+start
+:Betrachte die Liste;
+if (Liste hat ≤ 1 Element?) then (ja)
+  :Liste ist sortiert;
+  stop
+else (nein)
+  :Wähle ein Pivot-Element;
+  :Partitioniere die Liste in zwei Teilmengen:
+  :"Kleiner als Pivot" und "Größer als Pivot";
+  :Rufe QuickSort rekursiv auf beide Teilmengen auf;
+  :Kombiniere die sortierten Teilmengen mit dem Pivot;
+  stop
+endif
+@enduml

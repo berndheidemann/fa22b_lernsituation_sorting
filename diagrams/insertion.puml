@@ -1,0 +1,16 @@
+@startuml
+start
+:Betrachte das erste Element als bereits sortierten Bereich;
+while () is (Es gibt noch Elemente im unsortierten Bereich)
+  :Wähle das nächste Element aus dem unsortierten Bereich;
+  :Vergleiche es mit den Elementen im sortierten Bereich;
+  while () is (Es gibt ein Element, das größer ist)
+    :Verschiebe das größere Element nach rechts;
+  endwhile
+  -> Element an der richtigen Stelle;
+  :Füge das ausgewählte Element an der richtigen Position ein;
+endwhile
+-> Es gibt keine Elemente im unsortierten Bereich;
+:Die Liste ist vollständig sortiert;
+stop
+@enduml

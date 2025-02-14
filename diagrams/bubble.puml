@@ -1,0 +1,16 @@
+@startuml
+start
+:Betrachte die gesamte Liste als unsortiert;
+repeat
+  :Setze "Änderung vorgenommen" auf Nein;
+  :Durchlaufe die Liste paarweise;
+  if () then ([Element größer als sein Nachfolger?])
+    :Vertausche die beiden Elemente;
+    :Setze "Änderung vorgenommen" auf Ja;
+  else ([Elemente kleiner als sein Nachfolger])
+  endif
+repeat while () is (Änderungen vorgenommen?)
+-> keine Änderungen vorgenommen;
+:Die Liste ist sortiert;
+stop
+@enduml

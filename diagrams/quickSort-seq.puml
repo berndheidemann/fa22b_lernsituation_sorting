@@ -1,0 +1,37 @@
+@startuml
+actor User
+participant "QuickSort" as QS
+
+User -> QS: quicksort([3, 1, 4, 1, 5])
+activate QS
+note top: Erster Aufruf\nListe: [3, 1, 4, 1, 5]\nPivot = 3 (erstes Element)
+note right:\nPartitionierung:\nLeft = [1, 1]\nRight = [4, 5]
+
+QS -> QS: quicksort([1, 1])
+activate QS
+note left: Zweiter Aufruf\nListe: [1, 1]\nPivot = 1 (erstes Element)
+note right: Partitionierung:\nLeft = []\nRight = [1]
+
+QS -> QS: quicksort([1])
+activate QS
+deactivate QS
+note right: Basisfall: Liste mit einem Element
+deactivate QS
+note right: Kombiniere: [1] + [1] = [1, 1]
+
+QS -> QS: quicksort([4, 5])
+activate QS
+note left: Dritter Aufruf\nListe: [4, 5]\nPivot = 4 (erstes Element)
+note right: Partitionierung:\nLeft = []\nRight = [5]
+
+QS -> QS: quicksort([5])
+activate QS
+deactivate QS
+note right: Basisfall: Liste mit einem Element
+deactivate QS
+note right: Kombiniere: [] + [4] + [5] = [4, 5]
+
+note right: Kombiniere der Aufrufe:\n[1, 1] + [3] + [4, 5] = [1, 1, 3, 4, 5]
+QS --> User: return [1, 1, 3, 4, 5]
+deactivate QS
+@enduml
