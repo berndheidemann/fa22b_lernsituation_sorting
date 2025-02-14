@@ -71,7 +71,8 @@ Nutze Quick Sort, um den Laptop-Katalog effizient nach dem Preis zu sortieren.
 5. Kombiniert die sortierten Teillisten mit dem Pivot, um die vollständig sortierte Liste zu erhalten.
 
 ![Quick Sort](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
-![Quick Sort AD](diagrams/quicksort.png)
+![Quick Sort AD](diagrams/quickSort.png)
+![Quick Sort SD](diagrams/quickSort-seq.png)
 
 
 # Aufgabe 5 (Zusatzaufgabe): Strategy Pattern für Sortieralgorithmen
