@@ -16,7 +16,7 @@ Uhr erhaltet den Auftrag, den Laptop-Katalog unseres IT-Unternehmens *TechWorld 
 ## Aufgaben
 
 ### Aufgabe 1: Sortieren mit Bubble Sort
-- **Ziel:** Lest die CSV-Datei ein und sortiert die Laptops nach dem Preis mithilfe von Bubble Sort.
+- **Ziel:** Lest die CSV-Datei ein und sortiert die Laptops nach dem Preis mithilfe von Bubble Sort. Messe die Zeit in ms, die der Algorithmus für die Sortierung benötigt.
 - **Vorgehen:**
   1. Extrahiert die Preisdaten aus der CSV.
   2. Wendet den Bubble Sort an, der benachbarte Elemente vergleicht und bei Bedarf vertauscht.
@@ -29,7 +29,7 @@ Uhr erhaltet den Auftrag, den Laptop-Katalog unseres IT-Unternehmens *TechWorld 
 # Aufgabe 2: Sortieren mit Selection Sort
 
 **Ziel:**  
-Sortiert die Laptops nach Preis, indem ihr Selection Sort einsetzt.
+Sortiert die Laptops nach Preis, indem ihr Selection Sort einsetzt. Messe die Zeit in ms, die der Algorithmus für die Sortierung benötigt.
 
 **Vorgehen:**  
 1. Lest die CSV-Daten ein und extrahiert die Preisinformationen.  
@@ -43,7 +43,7 @@ Sortiert die Laptops nach Preis, indem ihr Selection Sort einsetzt.
 # Aufgabe 3: Sortieren mit Insertion Sort
 
 **Ziel:**  
-Sortiert die Laptop-Daten, indem ihr schrittweise jedes Element (Preis) in den bereits sortierten Teil der Liste einfügt.
+Sortiert die Laptop-Daten, indem ihr schrittweise jedes Element (Preis) in den bereits sortierten Teil der Liste einfügt. Messe die Zeit in ms, die der Algorithmus für die Sortierung benötigt.
 
 **Vorgehen:**
 1. Lest die CSV-Datei ein und extrahiert die Preisinformationen.
@@ -59,7 +59,7 @@ Sortiert die Laptop-Daten, indem ihr schrittweise jedes Element (Preis) in den b
 # Aufgabe 4: Sortieren mit Quick Sort
 
 **Ziel:**  
-Nutze Quick Sort, um den Laptop-Katalog effizient nach dem Preis zu sortieren.
+Nutze Quick Sort, um den Laptop-Katalog effizient nach dem Preis zu sortieren. Messe die Zeit in ms, die der Algorithmus für die Sortierung benötigt.
 
 **Vorgehen:**
 1. Lest die CSV-Datei ein und extrahiert die Preisinformationen.
@@ -84,6 +84,5 @@ Implementiert das Strategy Pattern, um die vier Sortieralgorithmen (Bubble Sort,
 1. Entwickelt eine gemeinsame Schnittstelle oder abstrakte Klasse, die die Sortierfunktionalität kapselt.  
 2. Implementiert für jeden der vier Sortieralgorithmen eine eigene Klasse, die diese Schnittstelle realisiert.  
 3. Erstellt eine Kontext-Klasse, die zur Laufzeit entscheidet, welcher Sortieralgorithmus verwendet wird (z.B. basierend auf der Größe der Datenmenge oder anderen Kriterien).  
-4. Nutzt die CSV-Datei, um die Laptops nach Preis zu sortieren und testet eure Implementierung.  
-
+4. Nutzt die CSV-Datei, um die Laptops nach Preis zu sortieren und testet eure Implementierung.
 
